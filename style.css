@@ -43,6 +43,7 @@ body {
     animation-timing-function: linear;
 }
 
+
 .p0 {
     font-family: 'Fredericka the Great', cursive;
 }
@@ -63,4 +64,5 @@ html {
 }
 .h1{
     animation-delay: 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
