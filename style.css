@@ -1,0 +1,66 @@
+@keyframes blnk-anim {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rb-anim {
+    0% {
+        color: red;
+    }
+    30% {
+        color: rgb(0, 0, 100);
+    }
+    80% {
+        color: hsl(30, 100%, 50%);
+    }
+    100% {
+        color: hsl(290, 80%, 70%);
+    }
+}
+@keyframes move-bg-anim {
+    0% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: 100vh;
+    }
+}
+
+body {
+    background-image: linear-gradient(hsl(0, 100%, 50%), hsl(60, 100%, 36%), hsl(120, 100%, 50%), hsl(180, 100%, 50%), hsl(240, 100%, 50%), hsl(300, 100%, 50%), hsl(360, 100%, 50%));
+    height: 100%;
+    color: white;
+    animation: move-bg-anim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.p0 {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+html {
+    height: 100%
+}
+
+.blink {
+    animation: blnk-anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.rainbowAnim {
+    animation: rb-anim;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+}
+.h1{
+    animation-delay: 0.3s;
+}
