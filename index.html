@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>hi</title>
+    <title>Welcome</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div style="background-color:lightblue">
-        <p>hi</p>
-    </div>
-    
+    <h1 class="h1 blink rainbowAnim"><blink><rainbowAnim>Welcome</rainbowAnim></blink></h1>
+    <marquee id="expanding-text" class="blink">plz don't leave meee</marquee>
+   <img src="platypuspic.jpg" width="300">
+   <img class="rot-img" src="acid-pic.jpg" width="300">
+   <script>
+        var exp=document.getElementById("expanding-text");
+        exp.innerText=exp.innerText+"e";
+
+        function addE(){
+            exp.innerText=exp.innerText+" :)";
+        }
+        window.setInterval(addE, 500)
+    </script>
 </body>
 </html>
